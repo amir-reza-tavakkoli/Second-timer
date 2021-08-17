@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+}
+
+#zz {
+    width: 5px;
+    height: 100px;
+    margin-top: 20px;
+    position: relative;
+    background-color: blue;
+}
+
+button {
+    margin-top: 10px;
+    width: 10vw;
+    height: 6vh;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    background-color: tomato;
+    font-weight: 600;
+}
+
+#p1 {
+    width: 5px;
+    height: 50px;
+}
+
+#mid {
+    height: 5px;
+    background-color: black;
+    width: 5px;
+    border: black solid;
+    border-radius: 100%;
+    margin-right: px;
+}
+
+#p2 {
+    width: 8px;
+    height: 45px;
+    background-color: white;
+}
+
+.novis{    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;}
+
+#svg {
+    position: fixed;
+    top: vh;
+    top: 9px;
+    width: 124px;
+    height: 124px;
+    z-index: 0;
+}
+
+p {
+    margin-top: 100px;
+}

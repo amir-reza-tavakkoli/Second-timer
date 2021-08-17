@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Page</title>
+    </head>
+    <body>
+
+
+        <img src="clocksvg.svg" alt="Clock" id="svg">
+        <div id="zz">
+            <div id="p1"></div>
+            <div id="mid"></div>
+            <div id="p2"></div>
+        </div>
+        <p>Clock!</p>
+        <p aria-live="polite" >elapsed time is: <span id="elapsed"></span> seconds</p>
+        <button type="button" onclick="change()" aria-label="Start timer">Go</button>
+        <button type="button" onclick="Reset()" aria-label="Reset timer">Reset</button>
+        <button type="button" onclick="Stop()" aria-label="Stop timer">Stop</button>
+        <script>
+            let interval='6';
+            let count=0
+            let division = document.getElementById("zz");
+
+            function change(){
+                division.style.transition = "all 1s";
+                    intervall=setInterval(function(){
+                        division.style.transform = `rotate(${interval}deg)`;
+                        interval=String(Number(interval)+6);count++;document.getElementById("elapsed").innerText=String(count);
+
+                    }, 1000);
+                }
+            function Stop() {
+                clearInterval(intervall)
+
+}
+            function Reset(){count=0;
+                document.getElementById("elapsed").innerText;
+                division.style.transform = `rotate(${-1*count+2}deg)`;interval=6;}
+        </script>
+    </body>
+</html>
